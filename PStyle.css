@@ -1,0 +1,178 @@
+*
+{
+   padding: 0;
+   margin: 0;
+   
+}
+
+body
+{
+	background-image: url(123.jpg);
+	background-size:cover;
+	background-position:center;
+	box-sizing: border-box;
+	font-family : 'cookie', cursive;
+	overflow-x: hidden;
+	height:100%;
+}
+
+
+
+	
+.menu-bar {
+	
+	width:42%;
+	height:50px;
+	margin:0px auto;
+	text-align: center;
+	background:rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 6px rgba(255,255,255,0.5);
+	position : relative;
+	
+}
+.menu-bar ul{
+	padding:0px;
+	list-style: none;
+	
+
+}
+.menu-bar ul li{
+	float: left;
+	color: white;
+	width: 160px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 25px;
+	list-style: none;
+	
+	background:rgba(0, 0, 0, 0.3);
+	
+	
+}
+.menu-bar ul li ul
+{
+	display: none;
+}
+.menu-bar ul li:hover > ul{
+	display: block;
+}
+.menu-bar ul li:hover
+ {
+    background:rgba(0, 0, 0, 0.9);
+	box-shadow: 0 0 6px rgba(255,255,255,0.5); 
+	
+	
+ }
+ .menu-bar ul li a
+ {
+	text-decoration: none;
+    color: #fff;
+ }	
+	
+.menu-bar .fa{
+	margin-right:2px;
+	
+}
+
+.header{
+	background:rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 6px rgba(255,255,255,0.5);
+	width: 100%;
+	height: 40px;
+	position: relative;
+	z-index: 10;
+	
+}
+
+
+.sidebarIcon{
+	
+	width: 22px;
+	height: 22px;
+	position: absolute;
+	z-index: 20;
+	top: 22px;
+	left: 15px;
+	cursor: pointer;
+}
+
+#openSidebarMenu:checked ~ #sidebarMenu{
+	transform: translateX(0);
+	
+}
+#sidebarMenu{
+	position:fixed;
+	height:100%;
+	left: 0;
+	top: 0;
+	width:250px;
+	margin-top: 60px;
+	background:rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 6px rgba(255,255,255,0.5);
+	transform: translateX(-250px);
+	transition: transform 250ms ease-in-out
+	
+}
+
+.menu{
+    position: absolute;
+    top:60px;
+    width:100%;
+}
+.menu li{
+	margin: 8px;
+	padding:14px 20px;
+	
+}
+.menu i{
+	color:#fff;
+	font-size:30px;
+	padding-right:8px;
+	
+}
+.menu a{
+	color:#fff;
+	font-size:20px;
+	text-decoration: none;
+}
+.menu li:hover{	
+     border-left: 1px solid: #fff;
+	 box-shadow: 0 0 6px rgba(255,255,255,0.5);
+	
+}
+.spinner{
+	height: 3px;
+	background: #fff;
+	transition: all 0.3s;
+}
+
+.spinner.middle,
+.spinner.bottom{
+	margin-top: 3px;
+}
+
+main{
+	width=100%;
+	font-size:50px;
+	text-align: center;
+	position : relative;
+	padding-top:100px;
+}
+main h2{
+		color : #f15;
+	text-shadow : 0 3px 10px rgba(0,0,0,0.5)
+}
+main .subtext:hover{
+	background-color:#000000;
+	color:#fff;
+}
+main input {
+	background-color: ;
+	padding:10px 30px;
+	cursor:pointer;
+	margin-top:15px;
+	border-radius:10px;
+	border:none;
+	outline:none;
+	
+}
