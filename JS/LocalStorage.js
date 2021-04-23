@@ -14,4 +14,5 @@ function edit() {
     localStorage.setItem("invite", JSON.stringify(data));
     document.getElementById("Name1").innerHTML = newData.MaleName;
     document.getElementById("Name2").innerHTML = newData.FemaleName;
+    document.getElementById("city").innerHTML = newData.venue;
 }
