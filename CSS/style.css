@@ -1,3 +1,7 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/cc/48/3b/cc483b945cf746255339655b2a5f25b3.jpg);
+}
+
 @-webkit-keyframes fall {
     0% {
         opacity: 0.9;
@@ -581,5 +585,5 @@ a {
 .editation {
     height: 100px;
     width: 100%;
-    background-color: rgba(224, 17, 17, 0.377);
+    /* background-color: rgba(224, 17, 17, 0.377); */
 }

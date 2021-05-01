@@ -532,19 +532,19 @@ body {
 }
 
 .place {
-    color: #874562;
+    color: #da3587;
     font-weight: 900;
 }
 
 .footer {
-    color: #564861;
+    color: #fff;
     text-align: center;
     font-size: 16px;
     margin: 24px;
 }
 
 .phone {
-    color: #874562
+    color: #da3587;
 }
 
 .end-msg {
@@ -554,7 +554,7 @@ body {
     background: linear-gradient(90deg, #b33a46, #9b313c);
     border-radius: 20px;
     font-size: 14px;
-    color: #fff;
+    color: #da3587;
     font-size: 24px;
 }
 
@@ -563,7 +563,7 @@ a {
 }
 
 .happiness {
-    color: #874562;
+    /* color: #da3587; */
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -571,7 +571,7 @@ a {
 }
 
 .twitter {
-    color: #874562;
+    color: #da3587;
 }
 
 .music {
@@ -589,6 +589,4 @@ a {
     width: 100%;
     padding-left: 500px;
     align-items: center;
-    /* justify-content: center; */
-    /* background-color: rgba(224, 17, 17, 0.377); */
 }

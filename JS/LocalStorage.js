@@ -5,7 +5,8 @@ function edit() {
     let newData = {
         "MaleName": document.getElementById("male").value,
         "FemaleName": document.getElementById("female").value,
-        "venue": document.getElementById("place").value
+        "venue": document.getElementById("place").value,
+        "Date": document.getElementById("date").value,
 
     }
 
@@ -15,6 +16,7 @@ function edit() {
     document.getElementById("Name1").innerHTML = newData.MaleName;
     document.getElementById("Name2").innerHTML = newData.FemaleName;
     document.getElementById("city").innerHTML = newData.venue;
+    document.getElementById("DateNow").innerHTML = newData.Date;
 }
 
 function hide() {
