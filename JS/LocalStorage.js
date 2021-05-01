@@ -16,3 +16,7 @@ function edit() {
     document.getElementById("Name2").innerHTML = newData.FemaleName;
     document.getElementById("city").innerHTML = newData.venue;
 }
+
+function hide() {
+    newData.hide;
+}

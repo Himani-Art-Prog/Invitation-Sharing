@@ -18,24 +18,24 @@
 
     <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap'>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/BirthDayStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!-- partial:index.partial.html -->
     <div class="sakura-falling"></div>
-    <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
-    <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration">
+    <!-- <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
+    <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration"> -->
     <section id="media"></section>
     <div class="wrap">
         <div class="title">
+            <h1>Happy BirthDay </h1>
             <h1 id="Name1">abc</h1>
-            <h2>&</h2>
-            <h1 id="Name2">xyz</h1>
-            <h3>Are getting married</h3>
+
+            <h3>God Bless you..!</h3>
             <p>
-                on <span class="date">29 November 2020</span></29>, At <span class="place" id="city"></span>
+                on <span id="onDate" class="date"></span></29>, At <span class="place" id="city"></span>
             </p>
         </div>
     </div>
@@ -48,8 +48,8 @@
             <div class="venue">SEE THE VENUE</div>
         </a>
         <!-- <a href="" onclick="hide()"><input type="button" onclick="window.print()" /></a> -->
-        <a href="f" download="">
-            <div class="venue">DOWNLOAD INVITATION CARD</div>
+        <a href="#" download="">
+            <div onclick="window.print();" class="venue">DOWNLOAD INVITATION CARD</div>
         </a>
     </div>
     <p class="footer">
@@ -59,14 +59,37 @@
     </p>
 
     <div class="editation">
-        <label for="">Boy name:</label> <input id="male" type="text"><label for="">Girl Name:</label><input id="female" type="text"><label for="">Place:</label><input id="place" type="text">
-        <Label>Date :</Label> <input type="date"><button onclick="edit()">Submit</button>
+        <label for="">BirthDay Boy/Girl:</label>
+        <input id="name" type="text">
+        <Label>Date :</Label> <input id="date" type="date"> Place:
+        </label><input id="place" type="text">
+        <button onclick="editBirthDay()">Submit</button><label for=""><label for="">
     </div>
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
     <script src='https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js'></script>
     <script src="./js/script.js"></script>
-    <script src="./js/localStorage.js"></script>
+    <script >
+        let data = localStorage.getItem("Birthday") ? JSON.parse(localStorage.getItem("Birthday")) : []
+
+        function editBirthDay() {
+    
+    let newData = {
+        "BdayName": document.getElementById("name").value,
+        "date": document.getElementById("date").value,
+        "venue": document.getElementById("place").value
+
+    }
+
+
+    data.push(newData);
+    localStorage.setItem("Birthday", JSON.stringify(data));
+    document.getElementById("Name1").innerHTML = newData.BdayName;
+    document.getElementById("onDate").innerHTML = newData.date;
+    document.getElementById("city").innerHTML = newData.venue;
+}
+    </script>
+
 </body>
 
 </html>
