@@ -19,6 +19,3 @@ function edit() {
     document.getElementById("DateNow").innerHTML = newData.Date;
 }
 
-function hide() {
-    newData.hide;
-}
