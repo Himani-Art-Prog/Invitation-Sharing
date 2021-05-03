@@ -1,5 +1,7 @@
 body {
-    /* background-image: url(https://i.pinimg.com/originals/cc/48/3b/cc483b945cf746255339655b2a5f25b3.jpg); */
+    background-image: url(https://img.freepik.com/free-vector/baby-shower-card-with-teddy-bear-moon-purple-background_62298-763.jpg?size=626&ext=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @-webkit-keyframes fall {
@@ -466,14 +468,15 @@ body {
     margin-bottom: 40px;
 }
 
-#time {
+
+/* #time {
     width: auto;
     height: auto;
     padding: 20px;
     background-color: #eee;
     border-radius: 20px;
     font-size: 16px;
-}
+} */
 
 .venue {
     width: auto;
@@ -583,12 +586,7 @@ a {
 }
 
 .editation {
-    padding-left: 250px;
     height: 100px;
     width: 100%;
     /* background-color: rgba(224, 17, 17, 0.377); */
-}
-
-.editation button {
-    margin-left: 420px;
 }

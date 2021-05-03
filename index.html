@@ -14,55 +14,65 @@
 </head>
 
 <body>
+    <div class="hero">
+        <div class="nav-bar">
+            <b>Invite</b>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-close" onclick="closeMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="./wedding.html">DESIGN</a></li>
+                    <!-- <ul>
+                        <a href="#">BirthDay</a>
+                    </ul> -->
+                    <li><a href="FEEDBACK.html">FEEDBACK</a></li>
+                </ul>
+                <a href="LogLink.html"><button type="button" class="btn">LOGIN</button></a>
+            </div>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="banner-tittle">
+            <h1>Invite Your<span> Loved One.<br>To Share </span>Your Special Moments Too...</h1>
+            <a href="CUSTOM.html"><button type="button" class="btn">Customization</button></a>
+        </div>
+        <div class="vertical-bar">
+            <div class="search-icon">
+                <i class="fa fa-list" aria-hidden="true"></i>
 
 
-    <div class="header"></div>
-    <input type="checkbox" class="checkbox" id="openSidebarMenu">
-    <label for="openSidebarMenu" class="sidebarIcon">
-        <div class="spinner top"></div>
-        <div class="spinner middle"></div>
-        <div class="spinner bottom"></div>
-    </label>
-    <div id="sidebarMenu">
+                <a href="c.html"><i class="fa fa-calendar" aria-hidden="true"></i></a>
+                <a href="demod.html"><i class="fa fa-sticky-note" aria-hidden="true"></i></a>
+                <a href="Contact us.html"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            </div>
+            <div class="social-media">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="notification">
+            <div class="content">
+                <small>invite you to share with us a celebration of love</small>
+                <p><a href="">PREV</a><a href="">NEXT</a></p>
+            </div>
+            <div class="notification-img">
+                <img src="./Assets/small.jpg">
 
-
-
-        <ul class="menu">
-            <li><a href="#"><i class="fa fa-qrcode"></i>
-                    Overview</a></li>
-            <li><a href="#"><i class="fa fa-calendar"></i>
-                    Calender</a></li>
-            <li><a href="#"><i class="fa fa-book"></i>
-                    Notes</a></li>
-            <li><a href="note.html"><i class="fa fa-female"></i>
-                    About</a></li>
-            <li><a href="#"><i class="fa fa-phone"></i>
-                    Contact</a></li>
-        </ul>
+            </div>
+        </div>
     </div>
+    <script>
+        var show = document.getElementById("nav-links");
 
-    <div class="menu-bar">
+        function showMenu() {
+            show.style.right = "0";
+        }
 
-        <ul>
-            <li><a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-
-            <li><a href="wedding.html"><i class="fa fa-edit" aria-hidden="true"></i>Design</a></li>
-
-            <li><a href="#"><i class="fa fa-cube" aria-hidden="true"></i>Login</a>
-
-                <li><a href="#"><i class="fa fa-envelope-open" aria-hidden="true"></i>Feedback</a></li>
-        </ul>
-
-    </div>
-    <main>
-        <h2 style="font-weight : bolder;">Invite Your Loved Ones...</h2>
-        <span class="subtext">To Share Your Special Moments...</span>
-        <form>
-            <input type="text" name="q" placeholder="Type to Search...">
-            <input type="submit" value="search">
-    </main>
-
-
-</body>
+        function closeMenu() {
+            show.style.right = "-200px";
+        }
+    </script>
 
 </html>
