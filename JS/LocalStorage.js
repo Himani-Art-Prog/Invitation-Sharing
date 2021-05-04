@@ -18,17 +18,3 @@ function edit() {
     document.getElementById("city").innerHTML = newData.venue;
     document.getElementById("DateNow").innerHTML = newData.Date;
 }
-
-
-function myFunction() {
-    setTimeout(() => {
-        var x = document.getElementById("myDIV");
-        if (x.style.display === "none") {
-            x.style.display = "block";
-        } else {
-            x.style.display = "none";
-        }
-        window.print()
-    }, 1000);
-
-}
