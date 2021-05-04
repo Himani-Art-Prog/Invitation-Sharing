@@ -1,0 +1,259 @@
+.outer-div {
+    height: 350px;
+    width: 15%;
+    color: black;
+    margin-left: 100px;
+    box-sizing: border-box;
+    box-shadow: 3px 2px 8px 5px lightgrey;
+}
+
+.innerItem {
+    height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-cnt {
+    height: 30px;
+    width: 90%;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    /* border: 1px solid lightgrey; */
+    box-shadow: 1px 1px 10px 2px lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upper-cnt p {
+    padding-right: 10px;
+    color: brown;
+}
+
+.img-cnt {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.spn-1 {
+    height: 25px;
+    width: 20px;
+    margin-left: 20px;
+    background-image: url(./javascript/images/geenSymbol.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+}
+
+h5 {
+    color: rgb(161, 158, 158);
+    padding: 0;
+    margin: 0;
+}
+
+h3 {
+    margin-left: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+.inp-1 {
+    height: 20px;
+    width: 90%;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 10px;
+}
+
+.add-info {
+    height: 60px;
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: left;
+    background-color: rgb(235, 232, 232);
+}
+
+.spn-2 {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.para {
+    margin: 0px 0px;
+    color: rgb(95, 93, 93);
+}
+
+.qty-cnt {
+    height: 20px;
+}
+
+.spn-3 {
+    border-right: 0;
+    padding: 0 4px;
+    height: 30px;
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* font: 12px/16px ProximaNovaA-Regular; */
+    border: 1px lightgrey;
+}
+
+.btncart {
+    /* margin-left: 30px; */
+    background-color: #f9da79;
+    color: black;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #d8d6cd;
+}
+
+.btncart:hover {
+    background-color: #f5d061;
+    transform: scale(1.1);
+    box-shadow: 1px 1px 2px 2px #d8d6cd;
+    ;
+}
+
+main {
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    /* background-color: purple; */
+    vertical-align: middle;
+}
+
+h1,
+h3 {
+    /* font-size: xx-large; */
+    text-align: center;
+}
+
+.buyer {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.images {
+    height: 260px;
+    flex-direction: column;
+    width: 20%;
+    margin: 20px;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+
+.images img {
+    padding-top: 10px;
+    height: 200px;
+    height: 50%;
+}
+
+@media (max-width: 1080px) {
+    h3 {
+        text-align: center;
+    }
+    .buyer {
+        vertical-align: middle;
+        align-items: center;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .images {
+        height: 230px;
+        width: 100%;
+        border-radius: 5px;
+        margin: 20px;
+        box-shadow: 10px 10px 8px 10px #888888;
+        display: inline-block;
+        text-align: center;
+        padding: 14px;
+    }
+    .seller {
+        flex-direction: column;
+        width: 100px;
+        height: auto;
+    }
+    .seller-img {
+        height: 20px;
+        color: white;
+        background-image: linear-gradient(to right, rgba(238, 10, 10, 0.562), rgba(10, 113, 248, 0.685));
+    }
+    .sub-img {
+        width: 100%;
+        background-color: rgb(209, 137, 137);
+    }
+}
+
+
+/*=============================Seller Container =================================*/
+
+.seller {
+    margin-top: 30px;
+    position: relative;
+    width: auto;
+    height: auto;
+    display: flex;
+    /* background-color: black; */
+}
+
+.seller-img {
+    width: auto;
+    height: 230px;
+}
+
+.sub-img {
+    width: 100%;
+    background-color: rgb(209, 137, 137);
+}
+
+.seller-img img {
+    width: 500px;
+    height: 300px;
+}
+
+#price {
+    /* text-align: center; */
+}
+
+.btn {
+    padding: 05px;
+    border-radius: 5px;
+}
+
+
+/*===================== Farmer ====================*/
+
+.insert-stock {
+    height: auto;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    background-color: blueviolet;
+}
+
+.cart-item {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
+
+.payment {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+}
