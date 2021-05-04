@@ -19,10 +19,16 @@ function edit() {
     document.getElementById("DateNow").innerHTML = newData.Date;
 }
 
-function hidden() {
-    console.log("hello Veera")
-    alert("done")
-        // setTimeout(() => {
-        //     var pdf = document.getElementById("pdf").innerHTML = window.print();
-        // }, 1000);
+
+function myFunction() {
+    setTimeout(() => {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        window.print()
+    }, 1000);
+
 }
