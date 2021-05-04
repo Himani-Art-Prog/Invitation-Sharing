@@ -20,7 +20,7 @@
 }
 
 .nav-bar b {
-    font-size: 40px;
+    font-size: large;
     margin-left: 20px;
     color: #fff;
 }
@@ -51,7 +51,7 @@ nav-link ul li:hover>ul {
 .nav-links ul a {
     color: #fff;
     text-decoration: none;
-    font-size: 13px;
+    font-size: large;
 }
 
 .nav-links ul li::after {
@@ -163,7 +163,7 @@ nav-link ul li:hover>ul {
 .content a {
     text-decoration: none;
     color: #000;
-    font-size: 13px;
+    font-size: large;
     margin: 0 10px;
 }
 

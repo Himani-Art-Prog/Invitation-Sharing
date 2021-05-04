@@ -65,3 +65,19 @@ var styles1 = [
 var styles2 = [
     'color: teal', 'display: block', 'text-shadow: 0 2px 0 rgba(0, 0, 0, 1)', 'line-height: 40px', 'font-weight: bold', 'font-size: 32px'
 ].join(';');
+
+
+
+
+function myFunction() {
+    setTimeout(() => {
+        var x = document.getElementById("myDIV");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+        window.print()
+    }, 1000);
+
+}

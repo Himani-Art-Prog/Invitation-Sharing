@@ -1,3 +1,5 @@
+let data = localStorage.getItem("Birthday") ? JSON.parse(localStorage.getItem("Birthday")) : []
+
 function editBirthDay() {
 
     let newData = {
